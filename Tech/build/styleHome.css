@@ -1,0 +1,62 @@
+/* styleHome.css */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(7, 72, 35, 0.7);
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.851); /* White background for the box */
+    border: 1px solid #ddd; /* Light gray border around the box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    width: 200px; /* Fixed width for the box */
+    box-shadow: 0 4px 8px rgb(47, 168, 78); /* Light shadow for the box */
+}
+
+table {
+    width: 100%; /* Make the table take up full width of the container */
+    border-collapse: collapse; /* Remove spacing between table cells */
+}
+
+td {
+    padding-bottom: 10px; /* Space between buttons */
+}
+
+input[type="button"] {
+    width: 100%; /* Make buttons take up full width of the container */
+    padding: 10px;
+    background-color: #2e6c04; /* Dark background for buttons */
+    color: white; /* White text for buttons */
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="button"]:hover {
+    background-color: #13b428; /* Slightly darker background on hover */
+}
+
+#exit{
+    background-color: #2e6c04;
+    color: rgb(247, 241, 241);
+    position: absolute;
+    bottom: 30px; /* Adjust this value to control the distance from the bottom */
+    width: 25%; 
+}
+#exit:hover{
+    background-color: #b42613;
+    color: rgb(247, 241, 241);
+}

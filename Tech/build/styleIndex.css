@@ -1,0 +1,88 @@
+
+body{
+margin: 10vh;
+background-image: linear-gradient(80deg, #01f386 10%, #01f386 10%, rgba(32, 190, 101, 0.7) 100%);
+color: rgb(237, 231, 231);
+overflow: hidden; /* Prevents scrolling */
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+form{
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 80vh; /* Full viewport height */
+
+}
+h1{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size:6vh;
+}
+label{
+    margin-left: 9px;
+    font-size: 2.5vh;
+}
+
+.container{
+    padding: 5vh;
+    background-color: rgb(7, 72, 35, 0.7);
+    border-radius: 50px;
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.4);
+    
+}
+
+input[type=text], input[type=password], button{
+width: 100%;
+padding: 1.9vh;
+margin: 15px 2px;   
+display: inline-block; 
+border: 1px solid #199D51;
+border-radius: 10px;
+box-sizing: border-box;
+background-color: #199D51;
+color: #ded5d5;
+
+
+
+}
+button:hover{
+color: rgb(6, 6, 6);
+background-color: #0d5029;
+cursor: pointer; /* Change cursor to pointer on hover */
+transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+
+}
+input::placeholder, textarea::placeholder {
+    color: #ded5d5; /* Set the color of the placeholder text */
+    opacity: 1; /* Ensures the color is visible, default is 0.5 */
+}
+
+input:hover{
+    border-color: #0f4a28;
+}
+input:focus{
+    outline: none;
+    transform: scale();
+}
+@keyframes wiggle {
+    0% { transform: rotate(-5deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+h1 {
+    transition: transform 0.5s; 
+}
+
+h1:hover {
+    animation: wiggle 0.6s; 
+}
